@@ -1,0 +1,14 @@
+<form>
+  <div class="form-group">
+    <input type="pokemon" class="form-control" id="pokemon" placeholder="Inserisci pokemon" #HTMLpokemon>
+  </div>
+  <button type="submit" class="btn btn-primary w-25" (click)="cercaPokemon(HTMLpokemon)">Invia</button>
+</form>
+
+<br>
+
+<p>{{data.forms[0].name}}</p>
+
+<p>{{data.forms[0].url}}</p>
+
+<router-outlet></router-outlet>
