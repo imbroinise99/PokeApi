@@ -7,8 +7,10 @@
 
 <br>
 
-<p>{{data.forms[0].name}}</p>
-
-<p>{{data.forms[0].url}}</p>
+<div *ngIf="data">
+  <h3>{{data.forms[0].name}}</h3>
+  <p>{{data.forms[0].url}}</p>
+  <button type="submit" class="btn btn-secondary w-25">Cattura Pokemon</button>
+</div>
 
 <router-outlet></router-outlet>
